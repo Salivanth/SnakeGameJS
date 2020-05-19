@@ -19,7 +19,6 @@ class Main {
         let direction = this.getDirectionFromKeystroke(snake);
         snake.moveSnake(direction);
         let collisionEntity = this.getCollision(board, snake, food);
-        // Move snake based on keystroke given by user.
         this.handleCollision(collisionEntity, board, snake);
         this.renderGameLoop(board, snake, food);
     }

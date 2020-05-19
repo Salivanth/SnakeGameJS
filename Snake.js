@@ -17,7 +17,7 @@ export class Snake {
         this.direction = Direction.NONE;
     }
 
-    // Move the snake one segment in a given direction. Add one to the size of the snake if the snake just ate.
+    // Add a new segment to the snake in a given direction. Used in conjunction with removeEndOfSnake() to move the snake.
     moveSnake(direction) {
         this.direction = direction;
         let currentHead = this.segments[0];
@@ -25,7 +25,7 @@ export class Snake {
         this.segments = newHead + this.segments;
     }
 
-    // Remove the end of the snake. Used if the snake did not collide with food.
+    // Remove the end of the snake. Used if the snake did not collide with food, so the snake remains the same size.
     removeEndOfSnake() {
         this.segments.pop();
     }

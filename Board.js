@@ -7,6 +7,8 @@ export class Board {
         this.boardSize = Constants.BOARD_SIZE;
     }
 
+    // Used when a boundary is hit to reduce the play space.
+    // TODO: Add logic to ensure that nothing clips into the smaller board.
     shrinkBoard() {
         this.boardSize = this.boardSize - Constants.BOARD_SHRINK_SIZE;
     }

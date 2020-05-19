@@ -12,4 +12,8 @@ export class Food {
         this.startX = Math.floor(Math.random() * Constants.BOARD_SIZE_IN_SEGMENTS - 1) * Constants.SEGMENT_SIZE + this.CENTER_FOOD_IN_SEGMENT;
         this.startY = Math.floor(Math.random() * Constants.BOARD_SIZE_IN_SEGMENTS - 1) * Constants.SEGMENT_SIZE + this.CENTER_FOOD_IN_SEGMENT;
     }
+
+    render() {
+
+    }
 }
