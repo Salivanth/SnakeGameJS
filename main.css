@@ -1,0 +1,21 @@
+board {
+    height: 800px;
+    width: 800px;
+    background-color: lightgrey;
+    display: block;
+}
+
+segment {
+    height: 16px;
+    width: 16px;
+    background-color: powderblue;
+    border: 1px black;
+}
+
+food {
+    height: 12px;
+    width: 12px;
+    background-color: powderblue;
+    border: 1px black;
+    rotation: 45deg;
+}
